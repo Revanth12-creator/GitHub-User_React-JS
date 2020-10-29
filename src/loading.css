@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    top: 0;
+    left: 0;
+  }
+  body {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: ; 
+  }
+  #container {
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #circle-1,
+  #circle-2,
+  #circle-3,
+  #circle-4 {
+    width: 10vw;
+    height: 10vw;
+    background: #fff;
+    margin: auto;
+    border-radius: 50%;
+  }
+  #circle-1 {
+    z-index: 0;
+    opacity: 0;
+    animation-name: view1;
+    animation-duration: 4.5s;
+    animation-timing-function: linear;
+  }
+  @keyframes view1 {
+    0% {
+      opacity: 0;
+    }
+    14% {
+      opacity: 0;
+    }
+    21.5% {
+      opacity: 1;
+      z-index: 2;
+    }
+    22% {
+      opacity: 1;
+      z-index: 2;
+    }
+    42% {
+      opacity: 0;
+    }
+  }
+  #circle-2 {
+    z-index: 0;
+    opacity: 0;
+    animation-name: view2;
+    animation-duration: 4.5s;
+    animation-timing-function: linear;
+  }
+  @keyframes view2 {
+    0% {
+      opacity: 0;
+    }
+    34% {
+      opacity: 0;
+    }
+    43.5% {
+      opacity: 1;
+      z-index: 2;
+    }
+    44% {
+      opacity: 1;
+      z-index: 2;
+    }
+    64% {
+      opacity: 0;
+    }
+  }
+  #circle-3 {
+    z-index: 0;
+    opacity: 0;
+    animation-name: view3;
+    animation-duration: 4.5s;
+    animation-timing-function: linear;
+  }
+  @keyframes view3 {
+    0% {
+      opacity: 0;
+    }
+    54% {
+      opacity: 0;
+    }
+    65.5% {
+      z-index: 2;
+      opacity: 1;
+    }
+    66% {
+      opacity: 1;
+      z-index: 2;
+    }
+    86% {
+      opacity: 0;
+    }
+  }
+  #circle-4 {
+    z-index: 0;
+    opacity: 0;
+    animation-name: view4;
+    animation-duration: 4.5s;
+    animation-timing-function: linear;
+  }
+  @keyframes view4 {
+    0% {
+      opacity: 0;
+    }
+    76% {
+      opacity: 0;
+    }
+    87.5% {
+      opacity: 1;
+      z-index: 2;
+    }
+    88% {
+      opacity: 1;
+      z-index: 2;
+    }
+    96% {
+      opacity: 0;
+    }
+  }
+  #circle-0 {
+    z-index: 999;
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    background: #fff;
+    border-radius: 50%;
+    top: auto;
+    margin-left: -10vw;
+    box-shadow: 0px 0px 20px rgba(0,0,0,.5);
+    animation-name: move;
+    animation-duration: 4.5s;
+    animation-timing-function: linear;
+  }
+  @keyframes move {
+    0% {
+      margin-left: -10vw;
+    }
+    100% {
+      margin-left: 110vw;
+    }
+  }
+  
+  
